@@ -1,0 +1,299 @@
+#headerText{
+	font-size: 60pt;
+	text-align: center;
+	/* background-color: #E0FFFF; */
+}
+
+#headerTextDiv{
+	color: black;
+	/* background-color: #E0FFFF; */
+}
+
+#textAreaInput{
+	width:40rem;
+	height:10rem;
+margin-top:2rem;
+
+}
+
+.headerContents{
+	height: 1px;
+	
+}
+
+.header{
+	background-image: url("../img/map2.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	
+}
+
+#headerTextDiv h1{
+	margin-bottom:0px;
+}
+
+.navbar li:hover {
+	background-color: #89edfb;
+}
+
+.navbar a:hover {
+	background-color: red;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.navbar{
+	margin: 0px 0px 0px 0px;
+	
+}
+
+header p {
+	margin: 0px 0px 0px 0px;
+}
+
+.container{
+	background-image: url("../img/map2.png");
+	width:100%;
+	height:100%;
+	margin-left:0px;
+	margin-right: 0px;
+}
+
+.noteTable {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+	
+.main-content {
+	background-color: #f8f8f8;
+	border-radius: 15px;
+	width: 1200px;
+	margin-top: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	overflow:auto;
+}
+
+body {
+	   /* font-family: 'Varela Round'; */
+	
+	    
+}
+footer{
+	padding-top:500px;
+	padding-bottom:25px;
+	text-align: center;
+	height: 100%;
+}
+
+a.nameLink{
+	color: black;
+	text-decoration: none;
+}
+
+table.teamTable{
+	background-color:#89edfb;
+}
+.login-form-1 .login-button {
+  position: absolute;
+  right: -50px;
+  top: 60%;
+  background: #ffffff;
+  color: #999999;
+  padding: 11px 0;
+  width: 50px;
+  height: 50px;
+  margin-top: 0px;
+  border: 5px solid #efefef;
+  border-radius: 50%;
+  transition: all ease-in-out 500ms;
+}
+.login-form-1 .login-button:hover {
+  color: #555555;
+  transform: rotate(720deg);
+}
+.login-form-1 .login-button.clicked {
+  color: #555555;
+}
+.login-form-1 .login-button.clicked:hover {
+  transform: none;
+}
+.login-form-1 .login-button.clicked.success {
+  color: #2ecc71;
+}
+.login-form-1 .login-button.clicked.error {
+  color: #e74c3c;
+}
+/*Desktop*/
+/*Desktop*/
+@media(min-width: 768px){
+	.houseDetailWrapper{
+	display: grid;
+	grid-template-rows:auto;
+	grid-gap:10px;
+	grid-template-columns:3fr;
+	
+	grid-template-areas:
+	'header header header'
+	'detailTable detailTable detailTable'
+	'map noteTable noteTable'
+	
+	}
+	
+	.main-content{
+		position:relative;
+		width:100%;
+	}
+	
+	.tableDiv{
+		postion:relative;
+		overflow-y: scroll; 
+		height: 300px;
+		padding-bottom: 10px;
+	}
+}
+
+/*Tablet*/
+@media(max-width: 767px){
+	#headerTextDiv h1{
+		font-size: 30pt;	
+	}
+	
+	.houseDetailWrapper{
+	
+	display: grid;
+	grid-template-rows:auto;
+	grid-template-columns:1fr;
+	
+	grid-template-areas:
+	'header'
+	'detailTable'
+	'noteTable'
+	'map';
+	
+	overflow:auto;
+	position:relative;
+	}
+	
+	.main-content{
+		position:relative;
+		width:100%;
+	}
+	
+		.tableDiv{
+		postion:relative;
+		overflow-y: scroll; 
+		height: 300px;
+		padding-bottom: 10px;
+	}
+	
+
+	
+}
+
+/*Mobile*/
+@media(max-width:480px){
+	#headerTextDiv h1{
+		font-size: 30pt;	
+	}
+	
+	.houseDetailWrapper{
+	
+	display: grid;
+	grid-template-rows:auto;
+	grid-template-columns:1fr;
+	
+	grid-template-areas:
+	'header'
+	'detailTable'
+	'noteTable'
+	'map';
+	
+	overflow:auto;
+	position:relative;
+	}
+	
+	.main-content{
+		position:relative;
+		width:100%;
+		padding-bottom: 2em;
+	}
+		.tableDiv{
+		postion:relative;
+		overflow-y: scroll; 
+		height: 300px;
+		padding-bottom: 10px;
+	}
+	
+	
+	
+
+}
+
+div.noteTable{
+	grid-area:noteTable;
+}
+
+div.mapouter{
+	grid-area: map;
+}
+
+div.detailTable{
+	grid-area:detailTable;
+}
+
+#noteText{
+	width:400px;
+	word-wrap: break-word; 
+}
+
+tr.noteTableRow td{
+	padding-bottom:1em;
+}
+
+h2.houseDetailHeader{
+	grid-area:header;
+	text-align : center;
+}
+
+.bunnyImg{
+	height: 125px;
+	width: 125px;
+}
+
+#addHouseForms form {
+	background:white;
+	padding:15px;
+	border-radius: 10px;
+	margin: 20px 0px 10px 0px;
+}
+
+#newSalesmanForm {
+		background:white;
+	padding:15px;
+	border-radius: 10px;
+	margin: 20px 0px 10px 0px;
+}
+
+#newProductForm {
+		background:white;
+	padding:15px;
+	border-radius: 10px;
+	margin: 20px 0px 10px 0px;
+}
+
+#selectForm {
+	margin-bottom: 20px;
+}
+
+#houseTable a {
+	color: black;
+}
+
+
+
+
